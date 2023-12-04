@@ -1,0 +1,190 @@
+/* Payment window */
+.payment-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .payment-open {
+    display: flex;
+    overflow-y: auto;
+  }
+  
+  .payment {
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.9s;
+  }
+
+.payment .content-section{
+  position: relative;
+}
+.payment-methods {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  
+  .payment-option {
+    display: inline-block;
+    margin-right: 52px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .payment-option label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  
+.payment-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+  }
+  
+  .payment-window {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+  }
+  
+  .summary-window {
+    background-color: #e0e0e0;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+    height: 95%;
+  }
+  .grid-container span {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 10px;
+  }
+  .card-info{
+    margin-top: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+  }
+  .away, .return {
+    padding: 1rem;
+    border-bottom: solid;
+  }
+  .away  div, .return div {
+    padding: 5px;
+  }
+  .away .title, .return .title {
+    color: #6930c3;
+    
+  }
+  
+  .info-section{
+    background-color: #000;
+}
+
+  .info-window p {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4b0082;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10
+  }
+
+  .input-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  /* Style the button */
+.next-step {
+  background-color: #6930c3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Style the input grid */
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-grid input[type="text"],
+.input-grid input[type="number"],
+.input-grid input[type="email"] {
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+
+.contact-grid input[type="tel"],
+.contact-grid input[type="email"] {
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.next-step:hover {
+  background-color: #5a189a;
+}
+
+.next-step:active {
+  transform: translateY(1px);
+}

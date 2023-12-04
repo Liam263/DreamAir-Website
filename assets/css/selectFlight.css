@@ -1,0 +1,118 @@
+/* Select Flight window */
+.flight-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.flight-open {
+  display: flex;
+  overflow-y: auto;
+}
+
+.select-flight {
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+  animation: modalFadeIn ease 0.9s;
+}
+/* End Select Flight window */
+
+/* flight ticket */
+.flight-section{
+    background-color: #000;
+}
+
+#flight .content-section{
+    width: 1200px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.ticket-info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 10px;
+  padding: 20px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.route{
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.date {
+  grid-row: 2 ;
+  grid-column: 1 / 2;
+}
+
+.depart-time{
+  grid-row: 1;
+  grid-column: 2 / 2;
+}
+.depart-airport {
+  grid-row: 2 ;
+  grid-column: 2 / 2;
+}
+
+.fa-plane-departure {
+  grid-row: 1 / span 2;
+  grid-column: 2 / 3;
+  justify-self: center;
+}
+
+.arrive-time{
+  grid-row: 1;
+  grid-column: 3 / 4;
+}
+
+.arrive-airport {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+
+.flight-number {
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+}
+
+.price{
+  grid-row: 1 / span 2;
+  grid-column: 4/span 2;
+  justify-self: center;
+}
+
+.purchase-btn {
+  grid-row: 1 / span 2;
+  grid-column: 5 / 6;
+  justify-self: center;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: purple;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.purchase-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* End flight ticket */

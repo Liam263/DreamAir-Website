@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly Dream Air</title>
+    <link rel="icon" type="image" href="/assets/img/images.jpg">
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <link rel="stylesheet" href="./assets/css/selectFlight.css"> 
+    <link rel="stylesheet" href="./assets/css/infoWindow.css"> 
+    <link rel="stylesheet" href="./assets/css/payment.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css"> 
+    <link rel="stylesheet" href="./assets/css/seats.css"> 
+    <link rel="stylesheet" href="./assets/css/F&D.css"> 
+
+    <script src="https://kit.fontawesome.com/4190102a38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div id="header">
+            <!-- nav begin -->
+            <ul id="nav">
+                <li><a href="#"> Discover </a></li>
+                <li><a href="#band"> Special Deal </a></li>
+                <li><a href="#tour"> About us </a></li>
+                <li><a href="#contact"> Contact </a></li>
+                <li><a href="#"> 
+                    More 
+                    <i class="nav-arrow-down ti-angle-down"></i>
+                </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                    
+                </li>
+            </ul>
+            <!-- nav end -->
+
+            <!-- search icon begin-->
+            <div class="search-button">
+                <!-- <p>Fly Dream Air</p> -->
+                <i class="search-icon fa-solid fa-plane-departure">    Fly Dream Air</i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn"><i class="menu-icon ti-menu"></i></div>
+            <!-- search icon end -->
+
+        </div>
+        
+        <!-- Search Flight Box -->
+      
+
+        <div id="slider">
+            <div class="text-content">
+                <div id="contact" class="content-section">
+                    <h2 class="section-heading">Search Flight</h2>
+
+                    <!-- Flight Nav Bar (Search Flight, Choose Tickets, Choose seats, Buy F&D, Payment) -->
+                        <nav>
+                            <ul>
+                              <li><a href="#search-flight" class="active process-btn">Search Flight</a></li>
+                              <li><a href="#choose-tickets" class="process-btn">Select FLight</a></li>
+                              <li><a href="#choose-tickets" class="process-btn">Information</a></li>
+                              <li><a href="#choose-seats" class="process-btn">Choose Seats</a></li>
+                              <li><a href="#buy-fd" class="process-btn">Buy F&D</a></li>
+                              <li><a href="#payment"class="process-btn paymentBtn">Payment</a></li>
+                            </ul>
+                        </nav>
+                
+                    
+                    <!-- End FLight Nav Bar -->
+
+                    <!-- Search FLight Box -->
+                    <div class="row contact-content">
+                        <div class="search-flight"> 
+                            <input type="text" id="from" placeholder="From">
+                            <input type="text" id ="to"placeholder="To">
+                            <input type="date" placeholder="Departure Date">
+                            <input type="date" placeholder="Return Date">
+                            <input type="number" placeholder="Tickets" min="1" >
+                            <button class = "search-btn">Search</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content"style="background: aliceblue;">
+            
+            
+                
+            <!-- Tour section -->
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">Recommended Locations</h2>
+                    <p class="section-subhead text-white">Most favourite places in the world</p>
+
+                    <!-- Places image -->
+                    <div class="row place-list ">
+                        <div class="col col-third mt-16 s-col-full ">
+                            <img src="./assets/img/places/London.jpeg" alt="London" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">London</h3>
+                                <p class="place-time"> <i class="fa-solid fa-star" style="color: #f0da8a;"></i> 4.6 Ratings</p>
+                                <p class="place-desc"> <i class="fa-regular fa-comments"></i> 2.9K Reviews</p>
+                                <button  class="btns s-full-width search-flight-btns">Search Flight</button>
+
+                            </div>
+                        </div>
+
+                        <div class="col col-third mt-16 s-col-full ">
+                            <img src="./assets/img/places/Paris.jpeg " alt="Paris" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time"> <i class="fa-solid fa-star" style="color: #f0da8a;"></i> 4.9 Ratings</p>
+                                <p class="place-desc"> <i class="fa-regular fa-comments"></i> 10K Reviews</p>
+                                <button  class="btns s-full-width search-flight-btns">Search Flight</button>
+
+
+                            </div>
+                        </div>
+
+                        <div class="col col-third mt-16 s-col-full ">
+                            <img src="./assets/img/places/Singapore.jpeg" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time"> <i class="fa-solid fa-star" style="color: #f0da8a;"></i> 4.5 Ratings</p>
+                                <p class="place-desc"> <i class="fa-regular fa-comments"></i> 2.6K Reviews</p>
+                                <button  class="btns s-full-width search-flight-btns">Search Flight</button>
+
+
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!-- END place image -->
+                </div>
+            </div>
+            <!-- END tour section -->
+        
+            <!-- About section -->
+                <div id="band" class="content-section" >
+                    <h2 class="section-heading">Explore more</h2>
+                    <p class="section-subhead">We have many other experiences you might like</p>
+        
+                    <div class="row place-list ">
+                        <div class="col col-third mt-16 s-col-full ">
+                            <img src="./assets/img/Experiences/hiking.jpeg" alt="London" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Hiking</h3>
+                                <p class="place-time"> <i class="fa-solid fa-star" style="color: #f0da8a;"></i> 4.6 Ratings</p>
+                                <p class="place-desc"> <i class="fa-regular fa-comments"></i> 2.9K Reviews</p>
+                                
+
+                            </div>
+                        </div>
+
+                        <div class="col col-third mt-16 s-col-full ">
+                            <img src="./assets/img/Experiences/camping.jpeg" alt="Paris" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Camping</h3>
+                                <p class="place-time"> <i class="fa-solid fa-star" style="color: #f0da8a;"></i> 4.9 Ratings</p>
+                                <p class="place-desc"> <i class="fa-regular fa-comments"></i> 10K Reviews</p>
+                                
+
+
+                            </div>
+                        </div>
+
+                        <div class="col col-third mt-16 s-col-full ">
+                            <img src="./assets/img/Experiences/climbing.jpeg" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Climbing</h3>
+                                <p class="place-time"> <i class="fa-solid fa-star" style="color: #f0da8a;"></i> 4.5 Ratings</p>
+                                <p class="place-desc"> <i class="fa-regular fa-comments"></i> 2.6K Reviews</p>
+                                
+
+
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div class="row place-list ">
+                        <div class="col col-third mt-16 s-col-full ">
+                            <img src="./assets/img/Experiences/kayak.jpeg" alt="London" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Kayak</h3>
+                                <p class="place-time"> <i class="fa-solid fa-star" style="color: #f0da8a;"></i> 4.6 Ratings</p>
+                                <p class="place-desc"> <i class="fa-regular fa-comments"></i> 2.9K Reviews</p>
+                                
+
+                            </div>
+                        </div>
+
+                        <div class="col col-third mt-16 s-col-full ">
+                            <img src="./assets/img/Experiences/hiking.jpeg" alt="London" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Hiking</h3>
+                                <p class="place-time"> <i class="fa-solid fa-star" style="color: #f0da8a;"></i> 4.6 Ratings</p>
+                                <p class="place-desc"> <i class="fa-regular fa-comments"></i> 2.9K Reviews</p>
+                                
+
+                            </div>
+                        </div>
+
+                        <div class="col col-third mt-16 s-col-full ">
+                            <img src="./assets/img/Experiences/camping.jpeg" alt="Paris" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Camping</h3>
+                                <p class="place-time"> <i class="fa-solid fa-star" style="color: #f0da8a;"></i> 4.9 Ratings</p>
+                                <p class="place-desc"> <i class="fa-regular fa-comments"></i> 10K Reviews</p>
+                                
+
+
+                            </div>
+                        </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            <!-- Contact section -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>                
+                <div class="row contact-content">
+                    <div class="col col-half s-col-full contact-info">
+                        <p><i class="ti-location-pin"></i> Wollongong , NSW 2500, Australia</p>
+                        <p><i class="ti-mobile"></i> Phone: <a href="tel:+00 15151515" >+00 15151515</a></p>
+                        <p><i class="ti-email"></i> Email: <a href="mailto: mail@mail.com" >mail@mail.com</a></p>
+                    </div>
+                    <div class="col col-half s-col-full contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half s-col-full">
+                                    <input type="text" name="" required placeholder="Name" id="" class="form-control">
+                                </div>
+                                <div class="col col-half s-col-full s-mt-8">
+                                    <input type="email" name="" required placeholder="Email" id="" class="form-control">
+                                </div>
+                            
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" required placeholder="Message" id="" class="form-control">
+                                </div>
+                            </div>
+                            <input class="btns pull-right mt-16 s-full-width" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact section -->
+
+    
+        </div>
+
+        <div id="footer">
+            <div class="socials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest-alt"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+            </div>
+            <p class="copy-right"> Powered by <a href="" class="">UMKG</a></p>
+        </div>     
+    </div>
+<!-- END OF HOME PAGE -->
+
+
+    <!-- Ticket window -->
+    <div class="flight-modal ">
+        <div  class="select-flight js-select-flight">
+            <div id="slider">
+                <div class="text-content">
+                    <div id="contact" class="content-section">
+                        <h2 class="section-heading">Select Flight</h2>
+    
+                        <!-- Flight Nav Bar (Search Flight, Choose Tickets, Choose seats, Buy F&D, Payment) -->
+                            <nav>
+                                <ul>
+                                  <li><a href="#search-flight" >Search Flight</a></li>
+                                  <li><a href="#choose-tickets" class="active">Select Flight</a></li>
+                                  <li><a href="#choose-tickets" class="info">Information</a></li>
+                                  <li><a href="#choose-seats" class="seat-btn">Choose Seats</a></li>
+                                  <li><a href="#buy-fd" class="F&D">Buy F&D</a></li>
+                                  <li><a href="#payment" class="paymentBtn">Payment</a></li>
+                                </ul>
+                            </nav>
+                    
+                        
+                        <!-- End FLight Nav Bar -->
+                    </div>
+                </div>
+            </div>
+    
+                <!-- Flight section -->
+            <div id="flight">
+                <div id="tour" class="flight-section">
+                    <div class="content-section">
+                        <h2 class="section-heading text-white">Select flight</h2>
+                        <p class="section-subhead text-white">Select your flight from Australia to London</p>
+    
+                        <!-- Places image -->
+                        <div class="row place-list ">
+                            <div class="row row-third mt-16 s-col-full ">
+                                <div class="ticket-info">
+                                        <h3 class="route"> <span class="depart">Australia</span> - <span class="dest">London</span></h3>
+                                        <p class="date">26/07/2023</p>
+                                        <div class="depart-time">7:50 </div>
+                                        <p class="depart-airport">SYD</p>
+                                        <i class="fa-solid fa-plane-departure"></i>
+                                        <div class="arrive-time">22:00 </div>
+                                        <p class="arrive-airport">MAN</p>
+                                        <div class="flight-number">VN-787</div>
+                                    <div class="price"> $200 AUD</div>
+                                    <button class="purchase-btn">Purchase</button>
+                                  </div>
+                                
+                                  <div class="ticket-info">
+                                    <h3 class="route"><span class="dest">London</span> - <span class="depart">Australia</span></h3>
+                                    <p class="date">10/08/2023</p>
+                                    <div class="depart-time">22:50 </div>
+                                    <p class="depart-airport">MAN</p>
+                                    <i class="fa-solid fa-plane-departure"></i>
+                                    <div class="arrive-time">10:00 </div>
+                                    <p class="arrive-airport">SYD</p>
+                                    <div class="flight-number">VN-899</div>
+                                <div class="price"> $250 AUD</div>
+                                <button class="purchase-btn">Purchase</button>
+                              </div>
+                            </div>
+    
+                            <div class="row row-third mt-16 s-col-full ">
+                                <div class="ticket-info">
+                                        <h3 class="route"><span class="depart">Australia</span> - <span class="dest">London</span></h3>
+                                        <p class="date">30/07/2023</p>
+                                        <div class="depart-time">7:50 </div>
+                                        <p class="depart-airport">SYD</p>
+                                        <i class="fa-solid fa-plane-departure"></i>
+                                        <div class="arrive-time">22:00 </div>
+                                        <p class="arrive-airport">MAN</p>
+                                        <div class="flight-number">VN-787</div>
+                                    <div class="price"> $190 AUD</div>
+                                    <button class="purchase-btn">Purchase</button>
+                                  </div>
+                                
+                                  <div class="ticket-info">
+                                    <h3 class="route"><span class="dest">London</span> - <span class="depart">Australia</span></h3>
+                                    <p class="date">10/08/2023</p>
+                                    <div class="depart-time">19:00 </div>
+                                    <p class="depart-airport">MAN</p>
+                                    <i class="fa-solid fa-plane-departure"></i>
+                                    <div class="arrive-time">6:00 </div>
+                                    <p class="arrive-airport">SYD</p>
+                                    <div class="flight-number">VN-899</div>
+                                <div class="price"> $220 AUD</div>
+                                <button class="purchase-btn">Purchase</button>
+                              </div>
+                            </div>
+    
+                            <div class="row row-third mt-16 s-col-full ">
+                                <div class="ticket-info">
+                                        <h3 class="route"><span class="depart">Australia</span> - <span class="dest">London</span></h3>
+                                        <p class="date">5/08/2023</p>
+                                        <div class="depart-time">7:50 </div>
+                                        <p class="depart-airport">SYD</p>
+                                        <i class="fa-solid fa-plane-departure"></i>
+                                        <div class="arrive-time">22:00 </div>
+                                        <p class="arrive-airport">MAN</p>
+                                        <div class="flight-number">VN-787</div>
+                                    <div class="price"> $200 AUD</div>
+                                    <button class="purchase-btn">Purchase</button>
+                                  </div>
+                                
+                                  <div class="ticket-info">
+                                    <h3 class="route"><span class="dest">London</span> - <span class="depart">Australia</span></h3>
+                                    <p class="date">20/08/2023</p>
+                                    <div class="depart-time">21:00 </div>
+                                    <p class="depart-airport">MAN</p>
+                                    <i class="fa-solid fa-plane-departure"></i>
+                                    <div class="arrive-time">6:00 </div>
+                                    <p class="arrive-airport">SYD</p>
+                                    <div class="flight-number">VN-787</div>
+                                <div class="price"> $200 AUD</div>
+                                <button class="purchase-btn">Purchase</button>
+                              </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Select Flight -->
+
+
+    <!-- INFO Window -->
+    <div class="info-modal ">
+        <div  class="info">
+            <div id="slider">
+                <div class="text-content">
+                    <div id="contact" class="content-section">
+                        <h2 class="section-heading">Select Flight</h2>
+    
+                        <!-- Flight Nav Bar (Search Flight, Choose Tickets, Choose seats, Buy F&D, Payment) -->
+                            <nav>
+                                <ul>
+                                  <li><a href="#search-flight" >Search Flight</a></li>
+                                  <li><a href="#choose-tickets" class="select-flight">Select Flight</a></li>
+                                  <li><a href="#choose-tickets" class="info-btn active">Information</a></li>
+                                  <li><a href="#choose-seats" class="seat-btn">Choose Seats</a></li>
+                                  <li><a href="#buy-fd" class="F&D">Buy F&D</a></li>
+                                  <li><a href="#payment" class="paymentBtn">Payment</a></li>
+                                </ul>
+                            </nav>
+                    
+                        
+                        <!-- End FLight Nav Bar -->
+                    </div>
+                </div>
+            </div>
+    
+                <!-- Information section -->
+            <div id="flight">
+                <div id="tour" class="info-section">
+                    <div class="content-section">
+                        <h2 class="section-heading text-white">Passengers</h2>
+                        <p class="section-subhead text-white">Fill in your Information</p>
+    
+                        <!-- Places image -->
+                        <div class="info-window">
+                            <p>ADULT 1 </p>
+                            <h2>Personal Information</h2>
+                            <form>
+                              <div class="input-grid">
+                                <input type="text" id="first-name" name="firstName" placeholder="Middle & First Name" required>
+                                <input type="text" id="last-name" name="lastName" placeholder="Last Name" required>                   
+                                <input type="text" id="Gender" name="gender" placeholder="Gender" required>
+                                <input type="text" id="nationality" name="nationality" placeholder="Nationality" required>
+                            </div>
+                            
+                            <h2>Contact Information</h2>
+                            <div class="contact-grid">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="info-window">
+                            <p>ADULT 2 </p>
+                            <h2>Personal Information</h2>
+                            <form>
+                              <div class="input-grid">
+                                <input type="text" id="first-name" name="firstName" placeholder="Middle & First Name" required>
+                                <input type="text" id="last-name" name="lastName" placeholder="Last Name" required>                   
+                                <input type="text" id="Gender" name="gender" placeholder="Gender" required>
+                                <input type="text" id="nationality" name="nationality" placeholder="Nationality" required>
+                            </div>
+                            
+                            <h2>Contact Information</h2>
+                            <div class="contact-grid">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="info-window">
+                            <p>ADULT 3 </p>
+                            <h2>Personal Information</h2>
+                            <form>
+                              <div class="input-grid">
+                                <input type="text" id="first-name" name="firstName" placeholder="Middle & First Name" required>
+                                <input type="text" id="last-name" name="lastName" placeholder="Last Name" required>                   
+                                <input type="text" id="Gender" name="gender" placeholder="Gender" required>
+                                <input type="text" id="nationality" name="nationality" placeholder="Nationality" required>
+                            </div>
+                            
+                            <h2>Contact Information</h2>
+                            <div class="contact-grid">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            </form>
+                        </div>
+                        <div class=" info-next-step">Next step</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END INFO WINDOW -->
+
+    <!-- Seats Selections  -->
+    <div class="seats-modal ">
+        <div  class="seats">
+            <div id="slider">
+                <div class="text-content">
+                    <div id="contact" class="content-section">
+    
+                        <!-- Flight Nav Bar (Search Flight, Choose Tickets, Choose seats, Buy F&D, Payment) -->
+                            <nav>
+                                <ul>
+                                  <li><a href="#search-flight" >Search Flight</a></li>
+                                  <li><a href="#choose-tickets" class="select-flight">Select Flight</a></li>
+                                  <li><a href="#choose-tickets" class="info-btn ">Information</a></li>
+                                  <li><a href="#choose-seats" class="seat-btn active">Choose Seats</a></li>
+                                  <li><a href="#buy-fd" class="F&D">Buy F&D</a></li>
+                                  <li><a href="#payment" class="paymentBtn">Payment</a></li>
+                                </ul>
+                            </nav>
+                    
+                        
+                        <!-- End FLight Nav Bar -->
+                    </div>
+                </div>
+            </div>
+    
+                <!-- Seats section -->
+            <div id="seats-selection">
+                <div  class="seats-section">
+                    <div class="content-section">
+                    
+                        <div class="container">
+                            <h2>Select Your Seat</h2>
+                            <div class="seating-plan">
+                              <div class="row">
+                                <div class="seat available"><span class="seat-number">1A</span><br><span class="price">700</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">1B</span><br><span class="price">700</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">1C</span><br><span class="price">700</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">1D</span><br><span class="price">700</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">1E</span><br><span class="price">700</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">1F</span><br><span class="price">700</span>$AUD</div>
+                              </div>
+                              <div class="row">
+                                <div class="seat available"><span class="seat-number">2A</span><br><span class="price">700</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">2B</span><br><span class="price">700</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">2C</span><br><span class="price">700</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">2D</span><br><span class="price">700</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">2E</span><br><span class="price">700</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">2F</span><br><span class="price">700</span>$AUD</div>
+                              </div>
+                              <div class="row">
+                                <div class="seat available"><span class="seat-number">3A</span><br><span class="price">500</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">3B</span><br><span class="price">500</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">3C</span><br><span class="price">500</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">3D</span><br><span class="price">500</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">3E</span><br><span class="price">500</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">3F</span><br><span class="price">500</span>$AUD</div>
+                              </div>
+                              <div class="row">
+                                <div class="seat available"><span class="seat-number">4A</span><br><span class="price">100</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">4B</span><br><span class="price">100</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">4C</span><br><span class="price">100</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">4D</span><br><span class="price">100</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">4E</span><br><span class="price">100</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">4F</span><br><span class="price">100</span>$AUD</div>
+                              </div>
+                              <div class="row">
+                                <div class="seat available"><span class="seat-number">5A</span><br><span class="price">100</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">5B</span><br><span class="price">100</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">5C</span><br><span class="price">100</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">5D</span><br><span class="price">100</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">5E</span><br><span class="price">100</span>$AUD</div>
+                                <div class="seat available"><span class="seat-number">5F</span><br><span class="price">100</span>$AUD</div>
+                                </div>
+                                
+                                  </div>
+                                  <p>Total cost: $<span id="total-cost">0</span></p>
+                                </div>
+                            </div>
+
+                            <div class=" seats-next-step">Next step</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End seats selection -->
+
+    <!-- Menu Window  -->
+    <div class="menu-modal ">
+        <div  class="menu">
+            <div id="slider">
+                <div class="text-content">
+                    <div id="contact" class="content-section">
+                        <h2 class="section-heading">Select Flight</h2>
+    
+                        <!-- Flight Nav Bar (Search Flight, Choose Tickets, Choose seats, Buy F&D, Payment) -->
+                            <nav>
+                                <ul>
+                                  <li><a href="#search-flight" >Search Flight</a></li>
+                                  <li><a href="#choose-tickets" class="select-flight">Select Flight</a></li>
+                                  <li><a href="#choose-tickets" class="info-btn ">Information</a></li>
+                                  <li><a href="#choose-seats" class="seat-btn">Choose Seats</a></li>
+                                  <li><a href="#buy-fd" class="F&D active">Buy F&D</a></li>
+                                  <li><a href="#payment" class="paymentBtn">Payment</a></li>
+                                </ul>
+                            </nav>
+                    
+                        
+                        <!-- End FLight Nav Bar -->
+                    </div>
+                </div>
+            </div>
+    
+                <!-- MEnu section -->
+            <div id="flight">
+                <div id="tour" class="info-section">
+                    <div class="content-section">
+                        <h2 class="section-heading text-white">Menu</h2>
+                        <p class="section-subhead text-white">Select your food & drink</p>
+    
+                        
+                        <main>
+                            <section id="menu">
+                                <h2>Menu</h2>
+                                <ul>
+                                    <li class="item">
+                                        <div class="item-name">Burger</div>
+                                        <div class="item-price">$10.00</div>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-name">Pizza</div>
+                                        <div class="item-price">$12.00</div>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-name">Taco</div>
+                                        <div class="item-price">$8.00</div>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-name">Salad</div>
+                                        <div class="item-price">$6.00</div>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-name">Water</div>
+                                        <div class="item-price">$1.00</div>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-name">Soda</div>
+                                        <div class="item-price">$2.00</div>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section id="cart">
+                                <h2>Cart</h2>
+                                <ul id="cart-items">
+                                    <li class="cart-item">
+                                        <div class="item-name">Burger</div>
+                                        <div class="item-quantity">1</div>
+                                        <div class="item-price">$10.00</div>
+                                        <button class="remove-from-cart">Remove</button>
+                                    </li>
+                                </ul>
+                                <div id="cart-total">Total: $10.00</div>
+                                <button id="checkout">Checkout</button>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Menu selection -->
+
+    <!-- PAYMENT SECTION -->
+    <div class="payment-modal">
+        <div  class="payment">
+            <div id="slider">
+                <div class="text-content">
+                    <div id="contact" class="content-section">
+                        <h2 class="section-heading">Select Flight</h2>
+    
+                        <!-- Flight Nav Bar (Search Flight, Choose Tickets, Choose seats, Buy F&D, Payment) -->
+                            <nav>
+                                <ul>
+                                  <li><a href="#search-flight" >Search Flight</a></li>
+                                  <li><a href="#choose-tickets" class="select-flight">Select Flight</a></li>
+                                  <li><a href="#choose-tickets" class="info-btn ">Information</a></li>
+                                  <li><a href="#choose-seats" class="seat-btn">Choose Seats</a></li>
+                                  <li><a href="#buy-fd" class="F&D">Buy F&D</a></li>
+                                  <li><a href="#payment" class="paymentBtn active">Payment</a></li>
+                                </ul>
+                            </nav>
+                    
+                        
+                        <!-- End FLight Nav Bar -->
+                    </div>
+                </div>
+            </div>
+    
+                <!-- Information section -->
+            <div id="flight">
+                <div id="tour" class="info-section">
+                    <div class="content-section">
+                        <h2 class="section-heading text-white">Payment</h2>
+                        <p class="section-subhead text-white">Choose your payment method</p>
+                        
+                        <div class="payment-container">
+                            <div class="payment-window">
+                              <div class="payment-methods">
+                              <h2>Payment method</h2>
+                                <div class="payment-option">
+                                  <input type="radio" id="mastercard" name="payment" value="mastercard">
+                                  <label for="mastercard"><img src="./assets/img/paymentMethod/mastercard.png" alt="Mastercard" style="height: 32px; width: 50px;"> Mastercard</label>
+                                </div>
+                                <div class="payment-option">
+                                    <input type="radio" id="paypal" name="payment" value="visa">
+                                    <label for="paypal"><img src="./assets/img/paymentMethod/visa.png" alt="Paypal" style="height: 32px; width: 50px;
+                                    ;"> Visa</label>
+                                  </div>
+                                <div class="payment-option">
+                                  <input type="radio" id="paypal" name="payment" value="paypal">
+                                  <label for="paypal"><img src="./assets/img/paymentMethod/paypal.png" alt="Paypal" style="height: 32px; width: 50px;
+                                  ;"> Paypal</label>
+                                </div>
+                              </div>
+
+                              <div class="card-info">
+                              <h2>Payment Information</h2>
+                              <form>
+                                <div class="input-grid">
+                                  <input type="text" id="fullName" placeholder="Name on card">
+                                  <input type="email" id="email"  placeholder="Email" required>
+                                  <input type="number" id="card-number" placeholder="Card Number" required>                   
+                                  <input type="number" id="expiredDate" placeholder="XX/YYYY" required>
+                                  <input type="number" id="cvc" placeholder="CVC" required>
+                                </div>
+
+                              </form>
+                              <input type="checkbox" id="terms-conditions"> <label for="terms-conditions">Terms and Conditions*</label>
+
+                            </div>
+                            </div>
+                            <div class="summary-window">
+                              <h2 style="padding: 10px ; border-bottom: solid;">Summary Information</h2>
+                              
+                                <div class="grid-container">
+                                  <div class="away">
+                                    <h3><span class="title">Departing</span> 8:00, 20/6/2023</h3>
+                                    <div><span class="title">From: </span> <span class="depart">Australia </span>(SYD)</div>
+                                    <div><span class="title">TO: </span> <span class="dest">London</span>(MAN)</div>
+                                    <div><span class="title">Seat: </span> <span class="payment-seats"></span></div>
+                                    <div><span class="title">Food & Drink: </span> <span class="final-order"></span>  </div>
+
+
+                                  </div>
+                                  <div class="return">
+                                    <h3><span class="title">Returning</span> 20:00, 15/7/2023</h3>
+                                    <div><span class="title">TO: </span>  <span class="dest">London</span> (MAN)</div>
+                                    <div><span class="title">From: </span> <span class="depart">Australia </span> (SYD)</div>
+                                    <div><span class="title">Seat: </span> <span class="payment-seats"></span></div>
+                                    <div><span class="title">Food & Drink: </span> <span class="final-order"></span> </div>
+                                  </div>
+                                  <h2>Total : <span class="total-payment">500</span> AUD </h2>
+                                </div>
+                            
+                            </div>
+                          </div>
+                          <button class="next-step">Make payment</button>
+                          
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PAYMENT SECTION -->
+
+    <script src="./script.js" type="module"></script>
+    <script src="./seats/seats.js" type="module"></script>
+    <script src="./F&D/F&D.js" type="module"></script>
+</body>
+</html>
+
+
+
+

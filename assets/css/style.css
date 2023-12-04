@@ -1,0 +1,555 @@
+/* Reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+ }
+
+/* 
+    1. Vi tri ?
+    2. Kich thuoc ?
+    3. Mau sac ?
+    4. Kieu dang ?
+*/
+
+/* Common */
+.clear {
+   clear: both; 
+}
+.text-white{
+    color: #fff !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.mt-8 {
+    margin-top: 8px  !important;
+}
+
+.mt-16 {
+    margin-top: 16px  !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row-third {
+    height: 33.333333%;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
+
+.col-third {
+    width: 33.333333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+
+/*  */
+.main{
+    display: auto;
+}
+.main-remove{
+    display: none;
+}
+
+.remove {
+    display: none;
+}
+/* Background Image */
+.background-image {
+    position: relative;
+    overflow: hidden; /* ensures image doesn't overflow div */
+    height: 200px; /* sets height to full viewport height */
+  }
+  
+  .background-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* sets width to fill div */
+    height: 100px; /* sets height to fill div */
+    object-fit: cover; /* ensures image is not distorted and fills the div */
+  }
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+   
+   
+}
+
+/* CSS Nav search bar */
+nav {
+    text-align: center;
+  }
+  
+  nav ul {
+    display: inline-block;
+    list-style: none;
+
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a.active {
+    background-color: #0077c0;
+  }
+  
+
+
+#nav{
+     display: inline-block;
+}
+
+#nav, .subnav{
+     list-style-type: none;
+}
+#nav>li {
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+
+#nav .nav-arrow-down{
+    font-size: 10px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+    
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0,0 , 0.3);
+}
+#nav .subnav a{
+    color: #333;
+    padding-left: 12px;
+    line-height: 38px;
+}
+
+#nav >li >a {
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px 0 24px;
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav >li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
+#header .search-button{
+    float: right;
+    padding: 0 21px;
+   
+
+}
+
+#header .menu-icon,
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#header .mobile-menu-btn:hover,
+#header .search-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+
+}
+
+#slider{
+   margin-top: 46px;
+   padding-top: 20%;
+   background: url('../img/images.jpg') top  / cover ;
+   position: relative;
+}
+
+#slider .text-content{
+    position: relative;
+    color: #fff;
+    bottom: 48px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    text-align: center;
+}
+
+/* NAvigation Search Bar */
+
+nav {
+    overflow: hidden;
+    
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #005ea6;
+  }
+  
+  nav li a.active {
+    background-color: #005ea6;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 20px;
+  }
+  
+  .tabcontent h2 {
+    margin-top: 0;
+  }
+  
+/* End Nagivation Search Bar */
+
+/* TESTT SEARCH FLight CSS */
+.search-flight {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .search-flight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+  }
+  
+  .search-flight input[type="text"],
+  .search-flight input[type="date"]{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+    width: 240px;
+  }
+  
+  .search-flight input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+    width: 80px;
+    
+  }
+  .search-flight button {
+    background-color: #0077c2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* width: 23%; */
+    margin-top: 5px;
+  }
+  
+  .search-flight button:hover {
+    background-color: #005ea6;
+  }
+
+
+
+  /* END TEST */
+
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
+
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+
+#content .about-text{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list{
+    margin-top: 32px;
+    overflow: hidden;
+}
+
+#content .member-name{
+    text-align: center;
+    font-size: 15px;
+}
+
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+/* Tour section */
+.tour-section{
+    background-color: #000;
+}
+
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.tickets-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 4px 16px;
+    border-bottom: 1px solid #ddd;
+
+}
+.tickets-list .sold-out{
+    background-color: #f44336;
+    margin-left: 16px;
+    color: #fff;
+    padding: 3px 4px;
+}
+
+.tickets-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+}
+
+/* Places */
+
+.place-list{
+    margin-top: 16px;
+
+}
+
+.place-img{
+    width: 100%;
+    height: 170px;
+    display: block;
+
+}
+.place-img:hover {
+    opacity: 0.65;
+
+}
+
+
+.place-body{
+    padding: 16px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+
+.place-time{
+    margin-top: 15px;
+    color: #757575
+}
+
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.btns{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    border: none;
+}
+
+.btns:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+/* CONTACT section */
+
+#contact{
+    padding: 40px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+
+/* Map section */
+.map-section img {
+ width: 100%;
+}
+
+/* FOOTER */
+#footer{
+
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.socials-list {
+    font-size: 20px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0,0 , 0.7);
+    text-decoration: none;
+}
+#footer .socials-list a:hover {
+    color: rgba(0, 0,0 , 0.3);
+}
+.copy-right {
+    font-size: 16px;
+    color: rgba(0, 0,0 , 0.7);
+    text-decoration: none;
+}
+
+.copy-right a{
+    color: rgba(0, 0,0 , 0.7);
+}
+
+.copy-right a:hover{
+    color: rgba(0, 0,0 , 0.3);
+}
+
+
+
+
+
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
