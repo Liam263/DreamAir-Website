@@ -13,7 +13,8 @@ Developed a flight booking website utilizing HTML/CSS and Javascript. This softw
 - **Data Storage:** The system is designed to store user inputs securely, ensuring that relevant information is retained for booking, reservation management, seat selection, and in-flight service purchases.
 
 ## Usage
-
+### Have a look at the project :
+     https://liam263.github.io/DreamAir-Website/
 To run the project locally:
 
 1. Clone or download the project:
